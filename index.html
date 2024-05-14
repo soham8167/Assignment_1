@@ -1,0 +1,938 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work FliqaIndia</title>
+    <meta name="description" content="With Turain Group's Whatsapp Marketing Services In Kolkata, you can drive results and visibility for your brand."/>
+    <meta name="author" content="Turain Group"/>
+    <link rel="canonical" href="https://www.turaingrp.com/" />
+    
+    
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Global Style -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" href="assets/css/all.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+<link rel="stylesheet" href="assets/css/flaticon_mycollection.css">
+<link rel="stylesheet" href="assets/css/odometer-theme-default.css">
+<link rel="stylesheet" href="assets/css/slick.css">
+<link rel="stylesheet" href="assets/css/slick-theme.css">
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+<!-- Custom Style -->
+<link rel="stylesheet" href="assets/css/style.css">
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js?onload=CaptchaCallback&render=explicit" async defer></script>
+ 
+</head>
+
+<body >
+    <!-- Header -->
+
+
+
+    
+    <nav id="navigation1" class="navigation" style="background-color: #1f2847;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-2">
+                    <div class="nav-header">
+                        <a class="nav-brand" href="javascript:void(0);">
+                            <img src="assets/images/turainlogo.svg" width="70px" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8 nav-menu-2">
+                    <div>
+                    <ul class="nav-menu">
+                        <li><a href="#" style="margin-right: 15px;">HOME</a></li>
+                        <li><a href="about-us/" style="margin-right: 15px;">ABOUT US</a></li>
+                        <li><a href="#" style="margin-right: 15px;">SERVICES</a></li>
+                        <li><a href="https://blog.turaingrp.com/" style="margin-right: 15px;">BLOGS</a></li>
+                        <!-- <li><a href="career/" style="margin-right: 15px;">CAREER</a></li> -->
+                        <li><a href="contact/">CONTACT US</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="col-lg-2 text-end d-lg-none"> <!-- Hide hamburger on desktop -->
+                    <!-- Static container for hamburger menu -->
+                    <div class="hamburger-container">
+                        <div class="hamburger-menu">
+                            <span class="hamburger-icon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sliding menu -->
+    <div class="sliding-menu">
+        <div class="close-btn">
+            <div class="close-icon" style="background-color: red;">
+                <span class="close-cross">X</span>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <hr style="border-color: white; margin: 10px 0;"> 
+            <li><a href="about-us/">ABOUT US</a></li>
+            <hr style="border-color: white; margin: 10px 0;"> 
+            <li><a href="#">SERVICES</a></li>
+            <hr style="border-color: white; margin: 10px 0;"> 
+            <li><a href="https://blog.turaingrp.com/">BLOGS</a></li>
+            <hr style="border-color: white; margin: 10px 0;"> 
+            <!-- <li><a href="career/">CAREER</a></li> -->
+            <hr style="border-color: white; margin: 10px 0;"> 
+            <li><a href="contact/">CONTACT US</a></li>
+        </ul>
+    </div>
+    
+    <style>
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+    
+        .nav-menu li {
+            margin-right: 20px;
+        }
+    
+        .nav-menu li:last-child {
+            margin-right: 0;
+        }
+    
+        .nav-menu li a {
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 20px; /* Increased font size */
+        }
+    
+        .nav-menu li a:hover {
+            color: yellow;
+        }
+    
+        .sliding-menu {
+            position: fixed;
+            top: 0;
+            right: -300px; /* initially hidden and positioned to the right */
+            width: 300px;
+            height: 100%;
+            background: #1f2847;
+            z-index: 1000;
+            transition: right 0.3s ease; /* changed left to right */
+            color: white;
+        }
+    
+        .sliding-menu ul {
+            list-style: none;
+            padding: 20px;
+            margin: 0;
+        }
+    
+        .sliding-menu ul li {
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-size: 18px;
+        }
+    
+        .sliding-menu ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    
+        .sliding-menu ul li a:hover {
+            color: yellow;
+        }
+    
+        .sliding-menu ul hr {
+            border: 0;
+            border-top: 1px solid white;
+            margin: 10px 0;
+        }
+    
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    
+        .close-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .close-cross {
+            font-size: 24px;
+            color: white;
+        }
+    
+        .hamburger-container {
+            border: 2px solid white; /* White border around the container */
+            border-radius: 5px; /* Rounded corners */
+            padding: 5px; /* Add some padding */
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    
+        .hamburger-menu {
+            cursor: pointer;
+            padding: 10px;
+        }
+    
+        .hamburger-icon {
+            display: block;
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            position: relative;
+        }
+    
+        .hamburger-icon::before,
+        .hamburger-icon::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            position: absolute;
+            left: 0;
+            transition: transform 0.3s ease;
+        }
+    
+        .hamburger-icon::before {
+            top: -10px;
+        }
+    
+        .hamburger-icon::after {
+            top: 10px;
+        }
+    
+        @media (max-width: 991px) {
+            .nav-menu {
+                display: none;
+            }
+    
+            .sliding-menu {
+                width: 250px;
+                right: -250px; /* Adjusted right position */
+            }
+    
+            .sliding-menu ul {
+                padding: 10px;
+            }
+        }
+    
+        @media (min-width: 992px) {
+            .hamburger-menu {
+                display: none; /* Hide hamburger on desktop */
+            }
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburgerMenu = document.querySelector('.hamburger-menu');
+            const slidingMenu = document.querySelector('.sliding-menu');
+            const closeBtn = document.querySelector('.close-btn');
+    
+            hamburgerMenu.addEventListener('click', function() {
+                slidingMenu.style.right = '0'; /* Changed from left to right */
+            });
+    
+            closeBtn.addEventListener('click', function() {
+                slidingMenu.style.right = '-300px'; /* Changed from left to right */
+            });
+        });
+    </script>
+    <!-- //End -->
+        <!-- Banner Panel -->
+        <div class="bannerPanel">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background: #189618  right top no-repeat;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 col-lg-5 bannerContent">
+                                    <span class="tagHeading bd-purple-500">Digital Marketing</span>
+                                    <h2>Lorem ipsum.</h2>
+                                    <p class="mb-3 mb-xl-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, nulla autem voluptatem libero, sapiente deleniti consectetur quidem, exercitationem animi ut quasi voluptates aspernatur in delectus culpa odit quisquam beatae impedit? </p>
+                                    <a href="#enservice" class="turainBtn">Enquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background: #e79934 top no-repeat;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 col-lg-5 bannerContent">
+                                    <span class="tagHeading bd-purple-500">BULK SMS</span>
+                                    <h2>Lorem</h2>
+                                    <p class="mb-3 mb-xl-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, facere. Blanditiis saepe quo, ipsa harum dicta sit ad perspiciatis hic fugit in aut praesentium dignissimos ea dolores ducimus modi veritatis?</p>
+                                    <a href="#enservice" class="turainBtn">Enquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="background: #704646 right top no-repeat;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-5 col-12 bannerContent">
+                                    <span class="tagHeading bd-purple-500">Web Design and Development </span>
+                                    <h2>Lorem, ipsum. </h2>
+                                    <p class="mb-3 mb-xl-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas blanditiis repellendus impedit sed dolorum, ea reiciendis, cum quod corrupti voluptate asperiores vel fugit doloribus voluptatem eaque! Quis fugit ut officia?</p>
+                                    <a href="#enservice" class="turainBtn">Enquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide" style="background: #ed060e right top no-repeat;">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-xl-6 col-lg-5 bannerContent">
+                                    <span class="tagHeading bd-purple-500">Graphic Design</span>
+                                    <h2>Lorem, ipsum.</h2>
+                                    <p class="mb-3 mb-xl-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis sunt aut adipisci explicabo dolores et officia repellat? Recusandae, ducimus autem aut distinctio qui eligendi libero dolores expedita itaque dolorem. Voluptas.</p>
+                                    <a href="#enservice" class="turainBtn">Enquire Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+              delay: 1000, // Auto play delay in milliseconds
+              disableOnInteraction: false // Enable/disable autoplay on swiper click and swipe
+            }
+          });
+        </script>
+        <!-- //End -->
+    
+        <!-- Award -->
+        <section class="pb-0 pt-md-5 pt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="awardList">
+                            <li><a href="https://g.page/r/CTVs5BXAXPxoEBE/review" target="blank">
+                                <img src="assets/images/google-review.svg" alt="gogole review" class="img-fluid"></a></li>
+                            <li><img src="assets/images/happy-customer.svg" alt="happy customer" class="img-fluid"></li>
+                            <li><img src="assets/images/GEM.svg" alt="gem" class="img-fluid"></li>
+                            <!-- <li><a target="_blank" href="assets/images/iso-certificate.jpg">
+                                <img src="assets/images/certificate/ISO.svg" alt="ISO" class="img-fluid"></a></li> -->
+                            <li><img src="assets/images/akamani.svg" alt="akamani" class="img-fluid"></li>
+                            <li><img src="assets/images/award.svg" alt="award   " class="img-fluid"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- About Panel -->
+        <section class="aboutPanel pb-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 pe-md-5">
+                        <div class="aboutLeftImg my-md-5 mb-3">
+                            <img src="assets/images/about-turian.jpg" class="img-fluid" title="About Turain" alt="Turain Software">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                       
+                        <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure?</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sunt ex minima aut voluptatem magnam explicabo consequatur tenetur laudantium!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci rerum, quasi nemo quod illum suscipit, odio deleniti a corporis alias necessitatibus possimus optio tenetur ut?</p>
+                        <a href="about-us/" class="turainBtn mt-3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Service -->
+        <section class="servicePanel pb-0">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <span class="tagHeading bg-soft-primary text-dark">OUR SERVICES</span>
+                        <h2>We Are Providing Digital Services</h2>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="serviceBox position-relative mb-4">
+                            <div class="icon-bx-sm">
+                                <i class="flaticon-communication"></i>
+                            </div>
+                            <div class="wraper-effect"></div>
+                            <div class="serviceContent">
+                                <h3>BULK SMS MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae possimus doloremque voluptas nobis voluptate fuga at vero eum exercitationem consequuntur.</p>
+                                <a href="bulk-sms-marketing-agency-kolkata/" class="text-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="serviceBox position-relative mb-4">
+                            <div class="icon-bx-sm">
+                                <i class="flaticon-order"></i>
+                            </div>
+                            <div class="wraper-effect"></div>
+                            <div class="serviceContent">
+                                <h3>APP DEVELOPMENT</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit, reprehenderit nostrum quos ut debitis architecto!</p>
+                                <a href="app-development/mobile-app-development/" class="text-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>                
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="serviceBox position-relative mb-4">
+                            <div class="icon-bx-sm">
+                                <i class="flaticon-software"></i>
+                            </div>
+                            <div class="wraper-effect"></div>
+                            <div class="serviceContent">
+                                <h3>WEB DESIGN & DEVLOPMENT</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum reprehenderit sunt itaque sapiente alias doloribus!</p>
+                                <a href="web-development-company/" class="text-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="serviceBox position-relative mb-4">
+                            <div class="icon-bx-sm">
+                                <i class="flaticon-ux-design"></i>
+                            </div>
+                            <div class="wraper-effect"></div>
+                            <div class="serviceContent">
+                                <h3>Whatsapp Marketing</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tempora id harum excepturi reprehenderit. </p>
+                                <a href="https://www.turaingrp.com/bulk-whatsapp-marketing-service-provider/" class="text-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="serviceBox position-relative mb-4">
+                            <div class="icon-bx-sm">
+                                <i class="flaticon-bullhorn"></i>
+                            </div>
+                            <div class="wraper-effect"></div>
+                            <div class="serviceContent">
+                                <h3>DIGITAL MARKETING</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio autem rerum distinctio ullam illum consequatur et!</p>
+                                <a href="https://www.turaingrp.com/digital-marketing-agency-kolkata/" class="text-warning">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Process -->
+        <section class="processPanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="tagHeading text-dark bg-soft-primary">Process</span>
+                        <h2>Our Development Process</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-lg-4 col-md-5 text-center position-relative">
+                        <div class="lineSec1">
+                            <img src="assets/images/line1.svg" alt="Turain Software">
+                        </div>
+                        <div class="lineSec2">
+                            <img src="assets/images/line2.svg" alt="Turain Software">
+                        </div>
+                        <div class="d-flex flex-column mb-5">
+                            <img src="assets/images/Researcs.gif" class="img-fluid" alt="our development process">
+                            <h3 class="text-uppercase">We Research</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="d-flex flex-column mb-5">
+                            <img src="assets/images/Test.gif" class="img-fluid" alt="Turain Group">
+                            <h3 class="text-uppercase">We Test</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5 text-center position-relative">
+                        <div class="d-flex flex-column">
+                            <img src="assets/images/Develop.gif" class="img-fluid" alt="Turain Software Pvt. Ltd.">
+                            <h3 class="text-uppercase">We Develop</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit Saepe!</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="assets/images/Execute.gif" class="img-fluid" alt="Our Success">
+                            <h3 class="text-uppercase">We Execute</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="lineSec3">
+                            <img src="assets/images/line3.svg" alt="Turain Group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Professional Service -->
+        <section class="proServicePanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-4" style="z-index: 1;">
+                        <h2>In Thing Professional Service</h2>
+                    </div>
+                </div>
+                <div class="row gx-lg-5 g-4">
+                    <div class="col-lg">
+                        <div class="box-pro">
+                            <img src="assets/images/password.png" width="50" alt="discovery">
+                            <h5>Discovery</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae molestias ab soluta, earum libero quia ipsa?</p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="box-pro">
+                            <img src="assets/images/operation.png" width="50" alt="Implementation">
+                            <h5>Implementation</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae aut nemo, eveniet illo natus dolorum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="box-pro">
+                            <img src="assets/images/customer-support.png" width="50" alt="help desk">
+                            <h5>Helpdesk</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aspernatur similique deserunt perspiciatis voluptate nulla?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Trail Main -->
+        <section class="py-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="trailMain">
+                            <h2 class="mb-0 me-3">Lorem ipsum dolor sit amet.</h2>
+                            <a href="tel:9230996919" class="turainBtn">Connect to Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Enquiry Panel -->
+        <section class="homeEnquiry" id="enservice">
+            <div class="container">
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 col-md-5">
+                        <div class="clientPanel">
+                            <!-- <sapn class="tagHeading bg-soft-primary text-dark">Clients</sapn> -->
+                            <h2 class="mb-1">They Trusted</h2>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="slider client-slider">
+                                <!-- point solution changing -->
+                                <div class="clientList"><img src="assets/images/IFB.jpg" alt="IFB" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/rupa.jpg" alt="Rupa" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/msme.jpg" alt="MSME" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/merlin_group.jpg" alt="merlin_group" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/iris.jpg" alt="iris" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/fortis.jpg" alt="fortis" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/woodlands.jpg" alt="woodlands" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/apollo_homecare.jpg" alt="apollo_homecare" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/tecno_india_group.jpg" alt="tecno_india_group" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/rice_education.jpg" alt="rice_education" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/toyota.jpg" alt="toyota" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/rotary_club.jpg" alt="rotary_club" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/sananda.jpg" alt="sananda" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/niper.jpg" alt="niper" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/piceeducare.jpg" alt="piceeducare" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/mp_jewellers.jpg" alt="mp_jewellers" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/institute_of_global_technology.jpg" alt="institute_of_global_technology" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/eastern_railway.jpg" alt="eastern_railway" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/intelligence_bureau.jpg" alt="intelligence_bureau" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/culcatta_club.jpg" alt="culcatta_club" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/hdfc_bank.jpg" alt="hdfc_bank" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/jalal_college.jpg" alt="jalan-college" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/basanthi_-devi_-college.jpg" alt="basanthi_-devi_-college" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/city_bazaar_metro.jpg" alt="city_bazaar_metro" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/chowman.jpg" alt="chowman" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/chandrani_pearls.jpg" alt="chandrani_pearls" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/new_pratima_jewellers.jpg" alt="new_pratima_jewellers" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/skipper.jpg" alt="skipper" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/axis_bank.jpg" alt="axis_bank" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/pipal_tree.jpg" alt="pipal_tree" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/pathfinder.jpg" alt="pathfinder" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/army_public_school.jpg" alt="army_public_school" class="img-fluid"></div>
+                                <div class="clientList"><img src="assets/images/sun_hospital.jpg" alt="army_public_school" class="img-fluid"></div>   
+                              <!-- point solution changing -->
+                        </div>
+                            <!-- <a href="#" class="turainBtn mt-3">View All Clients</a> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                        <div class="formPanel">
+                            <h2 class="mb-1">Free Consultation</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <form action="thankyou.php" method="post" class="row g-3" onsubmit="return captcha_check()">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="name" id="" placeholder="Name" class="form-control" required="">
+                                        <label for="">Name <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" name="email" id="" placeholder="Work Email" class="form-control"
+                                            required="">
+                                        <label for="">Work Email <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="mobile" oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                                            maxlength="10" pattern="\d{10}" id="" placeholder="Mobile Number" class="form-control"
+                                            required="">
+                                        <label for="">Mobile Number <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" name="company" id="" placeholder="Company" class="form-control">
+                                        <label for="">Company</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select name="service" id="" class="form-select rounded-0" required>
+                                            <option value="">Any One</option>
+                                            <option value="Bulk SMS">Bulk SMS</option>
+                                            <option value="WhatsApp Marketing">WhatsApp Marketing</option>
+                                            <option value="Digital Marketing">Digital Marketing</option>
+                                            <option value="Web Development">Web Development</option>
+                                            <option value="Software Development">Software Development</option>
+                                            <option value="Mobile App Development">Mobile App Development</option>
+                                            <option value="Graphics Design">Graphics Design</option>
+                                        </select>
+                                        <label for="">Select Our Service <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea name="message" id="" cols="10" rows="3" class="form-control"
+                                            placeholder="Any Message" style="min-height: 70px;" required=""></textarea>
+                                        <label for="">Any Message <span class="text-danger">*</span></label>
+                                    </div>
+                                </div>
+                                <!-- <div class="g-recaptcha" id="g-recaptcha"></div>
+                                <span class="text-danger" id="chk_captcha"></span>  -->
+                                <div class="col-12">
+                                    <button type="submit" class="w-100 turainBtn" name="submit">Send Query</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Counter Section -->
+        <section>
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-md-5">
+                        <img src="assets/images/companygrowth.svg" alt="company growth" class="img-fluid"
+                            title="Company Growth">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="itemCountMain">
+                            <div class="itemCount">
+                                <div class="d-flex justify-content-center mb-2">
+                                    <h2 class="odometer" data-count="1725">00</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>Completed Project</p>
+                            </div>
+                            <div class="itemCount">
+                                <div class="d-flex justify-content-center mb-2">
+                                    <h2 class="odometer" data-count="22">00</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>Worldwide Clients</p>
+                            </div>
+                            <div class="itemCount">
+                                <div class="d-flex justify-content-center mb-2">
+                                    <h2 class="odometer" data-count="5">00</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>Years of Experience</p>
+                            </div>
+                            <div class="itemCount">
+                                <div class="d-flex justify-content-center mb-2">
+                                    <h2 class="odometer" data-count="6">00</h2>
+                                    <h2>+</h2>
+                                </div>
+                                <p>Award Winner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Testimonial Panel -->
+        <section class="testimonialPanel pt-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <span class="tagHeading bg-soft-primary text-dark">Testimonial</span>
+                        <h2>See What Our Clients Say’s</h2>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="slider testimonial-slider">
+                            <div class="testiBox">
+                                <h3>Lorem Das</h3>
+                                <h6> Pvt. Ltd.</h6>
+                                <div class="d-flex justify-content-center mb-4">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos id, molestias architecto suscipit nisi cumque! Illo, quasi error.</p>
+                            </div>
+                            <div class="testiBox">
+                                <h3>Lorem roy</h3>
+                                <h6> Technical Head</h6>
+                                <div class="d-flex justify-content-center mb-4">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex expedita totam reprehenderit?</p>
+                            </div>
+                            <div class="testiBox">
+                                <h3>Ram Ghosh</h3>
+                                <h6>Software</h6>
+                                <div class="d-flex justify-content-center mb-4">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, voluptate!</p>
+                            </div>
+                           
+                            <div class="testiBox">
+                                <h3>Shyam Mondal</h3>
+                                <h6>PIXEL-Director</h6>
+                                <div class="d-flex justify-content-center mb-4">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning mx-1"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Contact Panel -->
+        <section class="homeContact text-dark py-0">
+            <div class="container">
+                <div class="row align-items-center justify-content-around">
+                    <div class="col-md-6 text-center">
+                        <h2 class="mb-3">Get in</h2>
+                        <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolor numquam rerum itaque incidunt ipsa.</p>
+                        <a href="tel:9230996919" class="turainBtn" style="width: 70%;">CONTACT US</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/images/contact-executive.png" alt="contact" title="Contact Executive"
+                            class="img-fluid">
+                        <span class="pattern2">
+                            <img src="assets/images/pink-chevron.svg" class="img-fluid" alt="Turain Software">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //End -->
+    
+        <!-- Footer Panel -->
+    <footer>
+        
+        <div class="container">
+            <div class="row gx-lg-5">
+                <div class="col-lg-3">
+                    <!-- <a href="#" class="d-flex align-items-center mb-3">
+                        <img src="assets/images/logo.svg" width="170" alt="logo" title="Tutain Software Pvt Ltd">
+                    </a> -->
+                    <div class="widget_getintuch mb-4">
+                        <ul>
+                            <li>
+                                <i class="bi bi-telephone-fill"></i>
+                                <span><a href="tel:+91 9230996919">+91 900000000</a><br> <a
+                                        href="tel:+91 6290384889">+91 800000000</a></span>
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i>
+                                <span><a href="mailto:sales@turaingrp.com">lorem@.com</a> <br> <a
+                                        href="mailto:support@turaingrp.com">support@.com</a></span>
+                            </li>
+                            <li>
+                                <i class="bi bi-geo-alt-fill"></i>
+                                <span><a href="https://goo.gl/maps/tEmTLw2UocbCSD86A" target="_blank">Ruby,
+                                        Kolkata-700107.</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <h6 class="mb-2 text-white">Others Platform</h6>
+                    
+                </div>
+                <div class="col-lg-9 px-lg-5">
+                    <div class="row justify-content-between mt-5 mt-lg-0">
+                        <div class="col-md col-6">
+                            <h5 class="footer-title">Information</h5>
+                            <div class="widget_services">
+                                <ul>
+                                    <li><a href="javascript:void(0);">Home</a></li>
+                                    <li><a href="about-us/">About Us</a></li>
+                                    <li><a href="services/">Services</a></li>
+                                    <li><a href="portfolio/">Portfolio</a></li>
+                                    <!-- <li><a href="https://blog.turaingrp.com/">Blogs</a></li>    -->
+                                    <!-- <li><a target="_blank" href="assets/images/brochure.pdf">Brochure</a></li>                              -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md col-6">
+                            <h5 class="footer-title">Services</h5>
+                            <div class="widget_services">
+                                <ul>
+                                    <li><a href="bulk-sms-marketing-agency-kolkata/">Bulk sms</a></li>
+                                    <li><a href="sms-services/bulk-whatsapp-marketing-service-provider/">Whatsapp marketing</a></li>
+                                    <li><a href="digital-marketing-agency-kolkata/">Digital marketing</a></li>
+                                    <li><a href="web-design-development/web-development-company/">Web dev</a></li>                                
+                                    <li><a href="app-development/mobile-app-development/">App development </a></li>
+                                    <li><a href="graphics-design/">Graphics design</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md col-6">
+                            <h5 class="footer-title">Other links</h5>
+                            <div class="widget_services">
+                                <ul>
+                                    <!-- <li><a href="career/">Career</a></li>
+                                    <li><a href="contact/">Support </a></li> -->
+                                    <li><a href="../error-code/">SMS Error</a></li>
+                                    <li><a href="https://www.dndfilters.com/" target="blank">DND </a></li>
+                                    <li><a href="https://billtrack.co.in/" target="blank">Bill Track</a></li>
+                                    <li><a href="election-campaign/">Election</a></li>
+                                    <li><a href="privacy-policy/">Privacy Policy</a></li>
+                                    <li><a href="terms-and-conditions/">Conditions</a></li>                                
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <h5 class="footer-title">Registered in</h5>
+                            <!-- <div class="registerItem mb-4">
+                                <a href="assets/images/Udyam Registration Turain.pdf" target="blank"><img src="assets/images/msme.png" alt="msme" class="img-fluid rounded"></a>
+                                <a href="assets/images/Telemarketing Certificate.pdf" target="blank"><img src="assets/images/trai.png" alt="TRAI" class="img-fluid ms-2 rounded"></a>
+                                 <img src="assets/images/iso-certification.jpg" alt="iso certification" class="img-fluid rounded"> 
+                            </div> -->
+                            <h5 class="footer-title">Our Other Business</h5>
+                            <!-- <div class="registerItem">
+                                <a href="https://www.facebook.com/poseind" target="blank"><img src="assets/images/pose.jpg" class="img-fluid rounded" alt="pose"></a>
+                                <img src="assets/images/dreamlink.jpg" class="img-fluid rounded ms-2" alt="dreamlink">
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    <!-- //End -->
+    
+    <!-- Copyright -->
+    <section class="py-3 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <small>Lorem ipsum dolor sit amet.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //End -->
+    
+
+    
+    <a href="" title="Turain Whatsapp" target="blank" class="whatsapp"><img src="assets/images/whatsapp.svg" alt=""></a>
+    
+    <a href="" class="enquireBtn">
+        <img src="assets/images/enquire.svg" alt="enquire">
+    </a>
+    
+
+    <!-- point solution  -->
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TD3MFBD"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+    <!-- JAVA Script -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/jquery-plugin-collection.js"></script>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+    
+</body>
+
+</html>
