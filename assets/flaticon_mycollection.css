@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "flaticon_mycollection";
+    src: url("../fonts/flaticon_mycollection.ttf?4d52266e7b5533ab078c59330693d9a4") format("truetype"),
+url("../fonts/flaticon_mycollection.woff?4d52266e7b5533ab078c59330693d9a4") format("woff"),
+url("../fonts/flaticon_mycollection.woff2?4d52266e7b5533ab078c59330693d9a4") format("woff2"),
+url("../fonts/flaticon_mycollection.eot?4d52266e7b5533ab078c59330693d9a4#iefix") format("embedded-opentype"),
+url("../fonts/flaticon_mycollection.svg?4d52266e7b5533ab078c59330693d9a4#flaticon_mycollection") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon_mycollection !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-order:before {
+    content: "\f101";
+}
+.flaticon-communication:before {
+    content: "\f102";
+}
+.flaticon-software:before {
+    content: "\f103";
+}
+.flaticon-application:before {
+    content: "\f104";
+}
+.flaticon-ux-design:before {
+    content: "\f105";
+}
+.flaticon-bullhorn:before {
+    content: "\f106";
+}
